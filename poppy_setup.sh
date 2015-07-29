@@ -76,8 +76,8 @@ then
     exit 0
 fi
 
-apt-get update
-apt-get install avahi-daemon passwd libnss-mdns
+apt-get update -y
+apt-get install -y avahi-daemon passwd libnss-mdns
 # Run installation scripts
 echo -e "\e[33mResize your file system.\e[0m"
 resize_p2
