@@ -83,7 +83,7 @@ echo -e "\e[33mResize your file system.\e[0m"
 resize_p2
 
 echo -e "\e[33mdownload needed files.\e[0m"
-wget -P $HOME/src https://raw.githubusercontent.com/HumaRobotics/poppy_install/master/src/poppy_launcher.sh
+wget -P $HOME/src https://raw.githubusercontent.com/HumaRobotics/poppy_install/poppy-torso/src/poppy_launcher.sh
 (crontab -l; echo "@reboot (cd $HOME/src; bash poppy_launcher.sh; rm poppy_launcher.sh)") | crontab
 cd ..
 
