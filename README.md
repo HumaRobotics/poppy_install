@@ -1,6 +1,10 @@
 Poppy software installation
 ===========================
 
+Branch: raspi-light
+install on a new raspberry pi 2 (user pi...) with 'pypot light' from humarobotics (without scipy)
+
+
 This tutorial describe how to install a clean poppy embedded linux environment from scratch.
 
 To do that you will need :
@@ -37,7 +41,7 @@ Let's start the installation :
 
  2. Download and run poppy_setup.sh
     ```bash
-      odroid@odroid:~$ curl -L https://raw.githubusercontent.com/poppy-project/poppy_install/master/poppy_setup.sh | sudo bash
+      odroid@odroid:~$ curl -L https://raw.githubusercontent.com/HumaRobotics/poppy_install/raspi-light/poppy_setup.sh | sudo bash
     ```
     Do not forget to set the root password "odroid"
 

@@ -60,14 +60,14 @@ install_python() {
 
 install_python_std_packages() {
   # Install Scipy dependancies
-  sudo apt-get -y install libblas3gf libc6 libgcc1 libgfortran3 liblapack3gf libstdc++6 build-essential gfortran python-all-dev libatlas-base-dev
+  #sudo apt-get -y install libblas3gf libc6 libgcc1 libgfortran3 liblapack3gf libstdc++6 build-essential gfortran python-all-dev libatlas-base-dev
   # not sure it is realy needed
-  pip install serial
-  pip install enum34
+  #pip install serial
+  #pip install enum34
   
   pip install numpy
-  pip install scipy
-  pip install matplotlib
+  #pip install scipy
+  #pip install matplotlib
   pip install ipython[all]
 }
 
@@ -84,7 +84,10 @@ install_poppy_software() {
     mkdir -p $POPPY_ROOT
   fi
 
-  for repo in pypot poppy-creature $creatures
+  #install light version of pypot from humarobotics
+  git clone -b light --single-branch https://github.com/HumaRobotics/pypot.git
+
+  for repo in poppy-creature $creatures #pypot 
   do
     cd $POPPY_ROOT
 
