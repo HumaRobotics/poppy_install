@@ -2,33 +2,8 @@ Poppy software installation
 ===========================
 
 Branch: raspi-light
-install on a new raspberry pi 2 (user pi...) with 'pypot light' from humarobotics (without scipy)
+install on a new raspberry pi 2 (nothing to change in fact...) with 'pypot light' from humarobotics (without scipy)
 
-
-This tutorial describe how to install a clean poppy embedded linux environment from scratch.
-
-To do that you will need :
-
- - your poppy main board (odroid U3 or pasberryPi)
- - the associated memmory card
- - a card reader for your computer
- - an ethernet connection to your network (internet and local)
-
-
-First of all you need to install your linux system. Please refer to your board manual ([odroid U3](http://com.odroid.com/sigong/nf_file_board/nfile_board_view.php?keyword=&tag=ODROID-U3&bid=243) or [raspberryPi](http://www.raspberrypi.org/downloads/)).
-
-Generally you have to download your image plug your memory card into your computer, unmount it and do a binary copy of the image :
- ```bash
-$ umount /dev/sdh1 #unmount your memory card
-$ sudo ls #This is a patch to avoid any bug into the dd commande...
-[sudo] password for yourmachine:
-...
-$ sudo dd bs=4M if=yourSystem.img | pv | sudo dd of=/dev/sdh # binary copy with progress bar.
-...
- ```
-
-Now you have a clean and fresh installation, you can mount your memory card to your board, plug your ethernet connection, and power up.
-If you have any wifi or bluetooth USB dongle you can plug it.
 
 Let's start the installation :
 
