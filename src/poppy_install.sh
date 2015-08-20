@@ -85,7 +85,10 @@ install_poppy_software() {
   fi
 
   #install light version of pypot from humarobotics
+  cd $POPPY_ROOT
   git clone -b light --single-branch https://github.com/HumaRobotics/pypot.git
+  cd pypot
+  python setup.py develop
 
   for repo in poppy-creature $creatures #pypot 
   do

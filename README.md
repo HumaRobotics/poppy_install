@@ -9,8 +9,8 @@ Let's start the installation :
 
  1. Connecting you to the board over ssh.
     ```bash
-      $ ssh odroid@odroid.local
-      odroid@odroid.local password: "odroid"
+      $ ssh pi@raspberrypi.local
+      odroid@odroid.local password: "raspberry"
       odroid@odroid:~$
     ```
 
