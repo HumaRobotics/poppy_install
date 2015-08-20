@@ -10,13 +10,19 @@ Let's start the installation :
  1. Connecting you to the board over ssh.
     ```bash
       $ ssh pi@raspberrypi.local
-      odroid@odroid.local password: "raspberry"
-      odroid@odroid:~$
+      pi@raspberrypi.local password: "raspberry"
+      pi@raspberrypi.local:~$
     ```
+
+ 1b. Use all the space from SD card
+    ```bash
+      pi@raspberrypi.local:~$sudo raspi-confi
+    ```
+    Select the first line and accept the resize. Accept the reboot.
 
  2. Download and run poppy_setup.sh
     ```bash
-      odroid@odroid:~$ curl -L https://raw.githubusercontent.com/HumaRobotics/poppy_install/raspi-light/poppy_setup.sh | sudo bash
+      pi@raspberrypi.local:~$ curl -L https://raw.githubusercontent.com/HumaRobotics/poppy_install/raspi-light/poppy_setup.sh | sudo bash
     ```
     Do not forget to set the root password "odroid"
 
