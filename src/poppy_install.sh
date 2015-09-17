@@ -69,6 +69,7 @@ install_python_std_packages() {
   #pip install scipy
   #pip install matplotlib
   pip install ipython[all]
+  pip install jupyter
 }
 
 install_notebook_startup() {

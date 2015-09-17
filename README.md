@@ -2,9 +2,29 @@ Poppy software installation
 ===========================
 
 Branch: raspi-light
-install on a new raspberry pi 2 (nothing to change in fact...) with 'pypot light' from humarobotics (without scipy)
+install on a new raspberry pi 2  with 'pypot light' from humarobotics (without scipy)
 
-
+What is specific to raspberry pi ?
+- no automatic resize
+- TODO install x11 ?
+- TODO put config.txt in /boot (screen config)
+- TODO lightdm to avoid screen sleep mode: 
+```bash
+    sudo nano /etc/lightdm/lightdm.conf
+     ```   
+ add in file:
+```bash 
+    xserver-command=X -s 0 dpms
+     ```  
+     
+ - TODO yeux au démarrage: 
+```bash
+    sudo apt-get install fbi
+     ```  
+     
+ - TODO text to speech : http://rpihome.blogspot.fr/2015/02/installing-pico-tts.html
+ + in raspi-config, advanced, force audio jack output
+     
 Let's start the installation :
 
  1. Connecting you to the board over ssh.
